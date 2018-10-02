@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/intro"
+        android:text="Capital Quiz"
+        android:textAllCaps="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/right_view"
+            android:text="RIGHT"
+            android:textColor="@android:color/black"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/wrong_view"
+            android:text="WRONG"
+            android:textColor="@android:color/black"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/right_count"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:paddingRight="50dp"
+            android:paddingLeft="20dp"
+
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/wrong_count"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question1"
+        android:text="What is the capital of Germany?"
+        android:textAllCaps="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:text="Berlin"
+            android:paddingLeft="16dp"
+            android:onClick="rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Munich"
+            android:paddingLeft="16dp"
+            android:onClick="wrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/question2"
+        android:text="What is the capital of Australia?"
+        android:textAllCaps="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:text="Sydney"
+            android:paddingLeft="16dp"
+            android:onClick="wrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Canberra"
+            android:paddingLeft="16dp"
+            android:onClick="rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/question3"
+        android:text="What is the capital of Argentina?"
+        android:textAllCaps="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:text="Rio De Janeiro"
+            android:paddingLeft="16dp"
+            android:onClick="wrongAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Buenos Aires"
+            android:paddingLeft="16dp"
+            android:onClick="rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/win"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/reset"
+        android:onClick="reset"
+        android:text="reset"
+        android:textAllCaps="true"
+        android:paddingLeft="16dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
